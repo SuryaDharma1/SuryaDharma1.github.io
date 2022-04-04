@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .kotak {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(13, 0, 128);
+        margin: 50px auto;
+        display: flex;
+      }
+
+      .kotak h3 {
+        margin: auto;
+        font-size: 2em;
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak" data-tilt>
+      <h3>
+        <p><a href="https://saweria.co/suryadharmao">Saweria</a></p>
+        <p></p>
+        <p><a href="index.html">Home</a></p>
+      </h3>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector('.kotak'), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+  </body>
+</html>
